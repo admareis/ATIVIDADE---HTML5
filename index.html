@@ -21,17 +21,17 @@
             border-radius: 20px;
             
         }
-        /*header{
+        header{
             display: flex;
-            justify-content: ;
-        }*/
+            flex-direction: column;
+            align-items: center;
+        }
         
         header img{
             width: 90%;            
             height: auto;
             border-radius: 30px;
             margin: 20px;
-            justify-content: center;
         }
         nav ul{
             display: flex;
@@ -43,6 +43,7 @@
         nav ul li a{
             list-style-type: none;
             text-decoration: none;
+            font-size: 1.5rem;
         }
         main{
             display: flex;
@@ -56,13 +57,23 @@
         h2{
             text-align: center;
         }
-        /*.cards{
+        .cards_container{
+            display: flex;
+            gap: 20px;
+            padding: 10px;
+            justify-content: center;
+            text-align: center;
 
-        }*/
+        }
         .cards img{
-            width: 250px;
-            height: 150px;
+            width: 400px;
+            height: 250px;
             border-radius: 20px;
+        }
+        .rodape{
+            background-color: #000;
+            border-radius: 10px;
+            margin: 0 auto;
 
         }
        
@@ -92,12 +103,14 @@
 
         <div>
             <h2>Confira e se apaixone pelo nosso cardápio:</h2>
-            <div class="cards"><img src="/imagens/salgada.jpeg" alt=""><p><strong>Produtos salgados</strong></p></div>
+            <div class="cards_container">
+            <div class="cards"><img src="/imagens/salgados.jpg" alt=""><p><strong>Produtos salgados</strong></p></div>
             <div class="cards"><img src="/imagens/doce.png" alt=""><p><strong>Produtos doces</strong></p></div>
+            </div>
         </div>
     </main>
 
-    <footer>
+    <footer class="rodape">
         <div>
             <a href="#"><img src="imagens/icon-instagram-branco.png" alt="Icon do Instagram"></a>
             <a href="#"><img src="imagens/icons-twitterx-branco.png" alt="Icon do Twitter/X"></a>
